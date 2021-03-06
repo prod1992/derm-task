@@ -1,0 +1,71 @@
+body, html {
+    height: 100%;
+}
+
+svg {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    vertical-align: middle;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+// utils
+.h-100 {
+    height: 100% !important;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+.w-100 {
+    width: 100% !important;
+}
+.bg-white {
+    background-color: #ffffff;
+}
+.bg-light {
+    background-color: $light-blue;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: between;
+}
+
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-end {
+    text-align: right !important;
+}
+.text-center {
+    text-align: center !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.my-5 {
+    margin-top: 2rem!important;
+    margin-bottom: 2rem!important;
+}

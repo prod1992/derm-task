@@ -21,6 +21,8 @@ const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin(
   favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
 }));
 
+console.log(path.resolve(environment.paths.source, 'images', 'content')),
+
 module.exports = {
   entry: {
     app: path.resolve(environment.paths.source, 'js', 'app.js'),
@@ -46,7 +48,7 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              name: 'images/design/[name].[hash:6].[ext]',
+              name: 'images/[name].[hash:6].[ext]',
               publicPath: '../',
               limit: environment.limits.images,
             },
