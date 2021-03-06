@@ -1,0 +1,45 @@
+.dashboard__card {
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+}
+.dashboard__card--white {
+    background: $white;
+}
+
+.dashboard__card--gray {
+    background: #f5f5f5;
+}
+
+.dashboard__card__header {
+    text-transform: uppercase;
+    padding: 1rem;
+    border-bottom: 1px solid $light-blue;
+    font-weight: 700;
+    color: #616364;
+}
+
+.dashboard__card__body {
+    padding: 0.875rem 1.5rem;
+}
+
+.dashboard__card__box {
+    padding: 1.875rem 0;
+    font-size: 0.75rem;
+}
+
+.dashboard__card__subheading {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04rem;
+}
+
+.dashboard__card__footer {
+    padding: 20px 15px 15px;
+    .button {
+        width: 100%;
+        display: block;
+    }
+}
+
+.dashboard__card--skin__journey {
+    
+}
