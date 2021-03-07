@@ -9,9 +9,19 @@
     display: flex;
     width: 100%;
     min-height: 100vh;
-    padding: 110px 0 0 0;
+   
     margin-right: auto;
     margin-left: auto;
+    padding: 56px 0 30px 0;
+    @media(min-width: 576px) {
+        padding: 80px 0 30px 0;
+        
+    }
+    @media(min-width: 992px) {
+
+        padding: 110px 0 30px 290px;
+    }
+  
 }
 
 .dashboard__row {
@@ -35,5 +45,18 @@
     &.col-auto {
         flex: 0 0 auto;
         width: auto;
+    }
+}
+
+
+.dashboard__greeting {
+    margin-top: 10px;
+}
+
+
+@media(min-width: 992px) {
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
     }
 }

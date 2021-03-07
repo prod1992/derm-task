@@ -1,25 +1,78 @@
 .dashboard__sidebar {
-    background-color: #ffffff;
     box-shadow: rgb(149 232 248 / 12%) 1px 1px 1px 1px;
     z-index: 999;
-    width: 290px;
+    background-color: $white;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    li {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    @media (min-width: 992px) {
+        width: 290px;
+        position: fixed;
+        left: 0;
+        top: 110px;
+        z-index: 5000;
+        height: 100%;
+        background-color: #ffffff;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        li {
+            display: block;
+        }
+    }
 }
 
 .dashboard__sidebar--link {
-    color: rgba($text-color, 0.5);
+    transition: color 0.17s ease;
+    position: relative;
+    padding: 10px;
     display: block;
-    padding: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.075rem;
-    border-bottom: 1px solid $primary-color;
+    &:after {
+        content: "";
+        display: block;
+        height: 3px;
+        position: absolute;
+        width: 0;
+        left: 15%;
+        background-color: $primary-color;
+        top: calc(100% - 3px);
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+    .btn__arrow--right {
+        display: none;
+    }
     &:hover {
         color: rgba($text-color, 1);
     }
-    transition: color 0.17s ease;
+
+    @media (min-width: 992px) {
+        color: rgba($text-color, 0.5);
+        display: block;
+        padding: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.075rem;
+        border-bottom: 1px solid $primary-color;
+        .btn__arrow--right {
+            display: block;
+        }
+    }
 }
 
 li.active > .dashboard__sidebar--link {
-    background-color: $primary-color;
-    color: rgba($text-color, 1);
-
+    font-weight: 700;
+    &:after {
+        width: 70%;
+    }
+    @media (min-width: 992px) {
+        background-color: $primary-color;
+        color: rgba($text-color, 1);
+        font-weight: normal;
+    }
 }
