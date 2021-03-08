@@ -3,13 +3,18 @@ button, .btn {
     font-family: "Formular",sans-serif;
     font-size: 14px;
     font-weight: normal;
-    padding: 14px 40px 14px 25px;
+    padding: 14px 25px 14px 25px;
     line-height: 1;
     white-space: nowrap;
     outline: none;
     text-decoration: none;
     letter-spacing: 0.06rem;
     transition: background-color .2s ease-out, color .2s ease-out, border .2s ease-out;
+    text-align: center;
+
+    &.right-arrow {
+        padding: 14px 45px 14px 25px;
+    }
 }
 
 .btn-primary {
@@ -30,8 +35,8 @@ button, .btn {
 
 .btn-secondary {
     background-color: transparent;
-    border: 1px solid rgb(156,162,165);
-    color: rgb(156,162,165);
+    border: 1px solid $text-color;
+    color:$text-color;
 }
 
 .btn--block {

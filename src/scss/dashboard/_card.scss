@@ -18,7 +18,7 @@
 }
 
 .dashboard__card__body {
-    padding: 0.875rem 1.5rem;
+    padding: 1.5rem;
 }
 
 .dashboard__card__box {
@@ -33,7 +33,7 @@
 }
 
 .dashboard__card__footer {
-    padding: 20px 15px 15px;
+    padding: 1.5rem;
     .button {
         width: 100%;
         display: block;
@@ -41,5 +41,7 @@
 }
 
 .dashboard__card--skin__journey {
-    
+    .btn {
+        margin-top: 2rem;
+    }
 }

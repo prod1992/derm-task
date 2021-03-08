@@ -2,6 +2,7 @@
 @import "card";
 @import "slider";
 @import "donut";
+@import "img-comparison";
 
 
 .dashboard__container {
@@ -19,7 +20,7 @@
     }
     @media(min-width: 992px) {
 
-        padding: 110px 0 30px 290px;
+        padding: 110px 0 30px calc(290px + 1.5rem);
     }
   
 }
@@ -48,7 +49,6 @@
     }
 }
 
-
 .dashboard__greeting {
     margin-top: 10px;
 }
@@ -56,6 +56,14 @@
 
 @media(min-width: 992px) {
     .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+
+@media(min-width: 1200px) {
+    .col-xl-6 {
         flex: 0 0 auto;
         width: 50%;
     }

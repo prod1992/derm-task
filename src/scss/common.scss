@@ -69,3 +69,15 @@ svg {
     margin-top: 2rem!important;
     margin-bottom: 2rem!important;
 }
+
+.d-flex {
+    display: flex !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+.flex-column {
+    flex-direction: column;
+}
