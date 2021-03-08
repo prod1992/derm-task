@@ -8,6 +8,11 @@
     li {
         display: inline-block;
         vertical-align: middle;
+        &.has--dropdown {
+            > a {
+                padding-right: 45px;
+            }
+        }
     }
 
     @media (min-width: 992px) {
@@ -55,10 +60,11 @@
     @media (min-width: 992px) {
         color: rgba($text-color, 0.5);
         display: block;
-        padding: 2rem;
+        padding: 1.75rem 2rem;
         text-transform: uppercase;
         letter-spacing: 0.075rem;
         border-bottom: 1px solid $primary-color;
+        font-size: 14px;
         .btn__arrow--right {
             display: block;
         }

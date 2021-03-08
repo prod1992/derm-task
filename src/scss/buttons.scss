@@ -1,6 +1,5 @@
 button, .btn {
     text-transform: uppercase;
-    font-family: "Formular",sans-serif;
     font-size: 14px;
     font-weight: normal;
     padding: 14px 25px 14px 25px;
@@ -8,7 +7,7 @@ button, .btn {
     white-space: nowrap;
     outline: none;
     text-decoration: none;
-    letter-spacing: 0.06rem;
+    letter-spacing: 1px;
     transition: background-color .2s ease-out, color .2s ease-out, border .2s ease-out;
     text-align: center;
 
