@@ -19,24 +19,33 @@ button, .btn {
 .btn-primary {
     background-color: #95e8f8;
     border: 1px solid #95e8f8;
-    color: #2e3033
-}
-
-.btn-primary:hover {
-    background-color: #b7e0e6;
-    border: 1px solid #b7e0e6
-}
-
-.btn-primary:active {
-    background-color: #b7e0e6;
-    border: 1px solid #b7e0e6
+    color: #2e3033;
+    &:hover {
+        background-color: #b7e0e6;
+        border: 1px solid #b7e0e6
+    }
+    &:active {
+        background-color: #b7e0e6;
+        border: 1px solid #b7e0e6
+    }
+    
 }
 
 .btn-secondary {
     background-color: transparent;
     border: 1px solid $text-color;
     color:$text-color;
+
+    &:hover {
+        color: rgba($text-color, 0.5);
+        border: 1px solid rgba($text-color, 0.5)
+    }
+    &:active {
+        color: rgba($text-color, 0.5);
+        border: 1px solid rgba($text-color, 0.5)
+    }
 }
+
 
 .btn--block {
     display: block;
