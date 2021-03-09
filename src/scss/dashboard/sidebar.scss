@@ -1,10 +1,10 @@
 .dashboard__sidebar {
-    box-shadow: rgb(149 232 248 / 12%) 1px 1px 1px 1px;
-    z-index: 999;
     background-color: $white;
-    margin-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
+    white-space: nowrap;
+    min-width: 660px;
+    width: 100vw;
     li {
         display: inline-block;
         vertical-align: middle;
@@ -16,14 +16,15 @@
     }
 
     @media (min-width: 992px) {
+        min-width: 290px;
         width: 290px;
         position: fixed;
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
         left: 0;
         top: 110px;
         z-index: 5000;
         height: 100%;
         background-color: #ffffff;
-        margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
         li {
@@ -37,6 +38,7 @@
     position: relative;
     padding: 10px;
     display: block;
+    color: $text-color;
     &:after {
         content: "";
         display: block;

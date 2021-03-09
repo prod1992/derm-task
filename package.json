@@ -10,7 +10,9 @@
   ],
   "dependencies": {
     "d3": "^6.5.0",
-    "svidget": "^0.3.5"
+    "smooth-scrollbar": "^8.6.0",
+    "svidget": "^0.3.5",
+    "sweet-scroll": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -73,7 +75,7 @@
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
     "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json",
-    "deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
+    "deploy": "npm run production && git add dist -f && git commit -m'updating gh-pages' && git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "target": "web"
 }
