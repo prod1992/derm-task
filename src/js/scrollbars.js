@@ -6,11 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', function () {
         var deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-
-        if (deviceWidth < 992) {
-            Scrollbar.initAll();
-        }
-        else {
+        Scrollbar.initAll();
+        if (deviceWidth >= 992) {
             Scrollbar.destroyAll();
         }
     });
