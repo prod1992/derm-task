@@ -3,7 +3,6 @@ import Scrollbar from 'smooth-scrollbar';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    Scrollbar.initAll();
 
     window.addEventListener('resize', function () {
         var deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
@@ -15,4 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             Scrollbar.destroyAll();
         }
     });
+    window.onresize = function() {
+        // triggering window resize
+    }
 }, false);
