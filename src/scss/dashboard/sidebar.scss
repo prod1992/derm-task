@@ -38,16 +38,17 @@
     position: relative;
     padding: 10px;
     display: block;
-    color: $text-color;
+    color: #979797;
     &:after {
         content: "";
         display: block;
-        height: 3px;
+        height: 4px;
         position: absolute;
         width: 0;
         left: 15%;
         background-color: $primary-color;
-        top: calc(100% - 3px);
+        top: calc(100% - 4px);
+        border-radius: 10px;
         @media (min-width: 992px) {
             display: none;
         }
@@ -56,11 +57,11 @@
         display: none;
     }
     &:hover {
-        color: rgba($text-color, 1);
+        color: $black;
     }
 
     @media (min-width: 992px) {
-        color: rgba($text-color, 0.5);
+        color: #979797;
         display: block;
         padding: 1.75rem 2rem;
         text-transform: uppercase;
@@ -75,12 +76,13 @@
 
 li.active > .dashboard__sidebar--link {
     font-weight: 700;
+    color: $black;
     &:after {
         width: 70%;
     }
     @media (min-width: 992px) {
         background-color: $primary-color;
-        color: rgba($text-color, 1);
+        color: $black;
         font-weight: normal;
     }
 }

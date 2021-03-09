@@ -12,7 +12,7 @@
 
 .dashboard__card__header {
     text-transform: uppercase;
-    padding: 1rem;
+    padding: 1.25rem 1rem;
     border-bottom: 1px solid $light-blue;
     font-weight: 700;
     color: #616364;
@@ -20,22 +20,22 @@
 }
 
 .dashboard__card__body {
-    padding: 1.5rem;
+    padding: 1.125rem;
 }
 
 .dashboard__card__box {
-    padding: 1.875rem 0;
-    font-size: 0.75rem;
+    padding: 1.125rem 0;
 }
 
 .dashboard__card__subheading {
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.04rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 10px;
 }
 
 .dashboard__card__footer {
-    padding: 1.5rem;
+    padding: 1.125rem;
     .button {
         width: 100%;
         display: block;
@@ -44,6 +44,14 @@
 
 .dashboard__card--skin__journey {
     .btn {
-        margin-top: 2rem;
+        margin-top: 0.9375rem;
     }
+}
+
+.dashboard__card__text--smaller {
+    font-size : 12px;
+}
+
+.dashboard__card__delivery__info {
+    margin-top: 5px;
 }

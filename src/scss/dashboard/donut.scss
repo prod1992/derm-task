@@ -6,6 +6,7 @@
 
 .donut__wrapper {
     position: relative;
+    padding: 1.5rem 0;
 }
 
 
@@ -18,5 +19,13 @@
     width: 150px;
     font-size: 0.875rem;
     color: #ff9a80;
+    font-size: 12px;
+    font-weight: 500;
 }
 
+
+@media(min-width: 576px) {
+    .donut__innertext {
+        font-size: 14px;
+    }
+}
