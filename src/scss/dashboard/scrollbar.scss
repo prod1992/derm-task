@@ -1,9 +1,0 @@
-[data-scrollbar] {
-    overflow: hidden;
-}
-
-[data-scrollbar][scrollbar-tracks="hidden"] {
-    .scrollbar-track {
-        display: none !important;
-    }
-}
